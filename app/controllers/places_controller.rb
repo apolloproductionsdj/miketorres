@@ -29,9 +29,9 @@ class PlacesController < ApplicationController
   def update
     @place = Place.find(params[:id])
     if @place.user != current user 
-      return render plain: 'Not Allowed', status :forbidden
+      return render plain: 'Not Allowed', status: :forbidden
     end
-    
+
     @place.update_attributes(place_params)
     redirect_to root_path
   end
