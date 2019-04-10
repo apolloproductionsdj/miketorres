@@ -41,10 +41,10 @@
   </div>
 </div>
 
-<div class="clear"></div>
 <%= simple_form_for @photo, url: '#' do |i| %>
-         <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-       <% end %>
+  <%= i.submit "Add a Photo", class: 'btn btn-primary' %>
+<% end %>
+
 
 <div class="clear"></div>
 <!-- Modal -->
@@ -83,7 +83,7 @@
 <div class="clear"></div>
 <div class="row">
   <% @place.comments.each do |comment| %>
-    <div class="col-12 col-sm-6">
+    <div class="col-12">
       <blockquote>
         <% if comment.humanized_rating.present? %>
           <b><%= comment.humanized_rating %></b> -
