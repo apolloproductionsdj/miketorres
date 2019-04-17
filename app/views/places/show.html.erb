@@ -41,10 +41,13 @@
   </div>
 </div>
 <div class="clear"></div>
+ <div class="col-10 offset-1"
 <%= simple_form_for @photo, url: place_photos_path(@place) do |i| %>
   <%= i.text_field :caption %>
    <%= i.file_field :photo %>
   <%= i.submit "Add a Photo", class: 'btn btn-primary' %>
+</div>
+</div>
 <% end %>
 
 
@@ -73,7 +76,8 @@
     </div>
   </div>
 </div>
-
+<div class="clear"></div>
+<br /><br />
 <div class="col-10 offset-1">
  <h1 class="float-left">Comments</h1>
 <!-- Button trigger modal -->
