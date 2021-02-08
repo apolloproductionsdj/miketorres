@@ -69,7 +69,7 @@ gem 'devise'
 gem 'will_paginate', '>= 3.1.0'
 gem 'geocoder'
 gem 'figaro'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'rails_12factor'
 source 'https://rails-assets.org' do
